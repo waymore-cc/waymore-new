@@ -1,0 +1,67 @@
+#flyoutMenu {
+  width: 100%;
+  /* background: linear-gradient(to top right, #fff 0%, #c3cd 100%); */
+  background-color: #f5f5f5;
+  position: fixed;
+  top: 0;
+  transition: all 0.95s cubic-bezier(0.25, 0.75, 0, 1);
+  /* overflow: scroll; */
+  z-index: 100;
+  /* padding-bottom: 2rem; */
+  /* border-bottom: solid 1px #282828; */
+  box-sizing: border-box;
+  padding-top: 0.75rem;
+}
+#flyoutMenu p {
+  max-width: 1280px;
+  margin: 15px auto;
+  padding: 1rem 0rem 0.5rem 0rem;
+}
+#flyoutMenu ul {
+  list-style: none;
+  padding: 0;
+}
+#flyoutMenu h2 {
+  max-width: 1280px;
+  margin: 15px auto;
+  padding: 0 1.2rem 0 0;
+}
+#flyoutMenu h2 a {
+  color: #000;
+  text-decoration: none;
+  margin-left: -8px;
+  padding: 8px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+#flyoutMenu h2 a:hover {
+  background: #282828;
+  color: #fff;
+}
+
+#flyoutMenu.hide {
+  transform: translate3d(0, -100vh, 0);
+  transition: all 1s cubic-bezier(0.7, 0, 0.3, 0.5);
+}
+
+#flyoutMenu.show {
+  transform: translate3d(0, 0, 0);
+  overflow: hidden;
+}
+
+#paintLine {
+  transition: all 0.95s cubic-bezier(0.25, 0.75, 0, 1);
+}
+#paintLine.hide {
+  transform: translate3d(-100vw, 0, 0);
+  transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 0.5);
+}
+
+#paintLine.show {
+  transform: translate3d(0, 0, 0);
+  transition-delay: 0.3s;
+  overflow: hidden;
+}
+/*# sourceMappingURL=Menu.css.map */

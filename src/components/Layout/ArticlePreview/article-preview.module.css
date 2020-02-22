@@ -1,0 +1,24 @@
+.previewTitle {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #001c77;
+  text-decoration: none;
+  margin: 0 0 1rem 0;
+}
+
+.tag {
+  color: #a0a0a0;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.33333rem 1rem;
+  line-height: 1;
+  border-radius: 10px;
+  border: 1px solid #a0a0a0;
+  margin: 0.5rem 0.5rem 0 0;
+  transition: all 0.3s;
+}
+.tag:hover {
+  color: #282828;
+  border-color: #282828;
+  cursor: pointer;
+}

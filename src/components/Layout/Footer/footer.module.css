@@ -1,0 +1,26 @@
+.footer {
+  background-color: #fff;
+  border-top: 1px solid #282828;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1180px;
+  margin: 2rem 1rem;
+  width: 100%;
+  /* margin: 0 auto; */
+}
+.footerGrid div {
+  display: grid;
+  align-items: center;
+}
+.favicon {
+  width: 3rem;
+  height: 3rem;
+  margin-left: auto;
+}

@@ -1,0 +1,119 @@
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  .moduleOne {
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    background-color: #fff;
+    color: #282828;
+    transition: all 0.2s;
+  }
+
+  .moduleTwo {
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    background-color: #fff;
+    color: #282828;
+    transition: all 0.2s;
+    text-align: center;
+  }
+
+  .moduleThree {
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    background-color: #fff;
+    color: #282828;
+    transition: all 0.2s;
+    text-align: right;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .moduleOne {
+    font-size: 3rem;
+    padding: 2rem 3rem;
+    background-color: #fff;
+    color: #282828;
+    transition: all 0.2s;
+  }
+
+  .moduleTwo {
+    font-size: 3rem;
+    padding: 2rem 3rem;
+    background-color: #fff;
+    color: #282828;
+    transition: all 0.2s;
+    text-align: center;
+  }
+
+  .moduleThree {
+    font-size: 3rem;
+    padding: 2rem 3rem;
+    background-color: #fff;
+    color: #282828;
+    transition: all 0.2s;
+    text-align: right;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .moduleOne {
+    font-size: 4rem;
+    padding: 2rem 3rem;
+    background-color: #fff;
+    color: #282828;
+    transition: all 0.2s;
+  }
+
+  .moduleTwo {
+    font-size: 4rem;
+    padding: 2rem 3rem;
+    background-color: #fff;
+    color: #282828;
+    transition: all 0.2s;
+    text-align: center;
+  }
+
+  .moduleThree {
+    font-size: 4rem;
+    padding: 2rem 3rem;
+    background-color: #fff;
+    color: #282828;
+    transition: all 0.2s;
+    text-align: right;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1420px) {
+  .moduleOne {
+    font-size: 6rem;
+    padding: 2rem 3rem;
+    background-color: #fff;
+    color: #282828;
+    transition: all 0.2s;
+  }
+
+  .moduleTwo {
+    font-size: 6rem;
+    padding: 2rem 3rem;
+    background-color: #fff;
+    color: #282828;
+    transition: all 0.2s;
+    text-align: center;
+  }
+
+  .moduleThree {
+    font-size: 6rem;
+    padding: 2rem 3rem;
+    background-color: #fff;
+    color: #282828;
+    transition: all 0.2s;
+    text-align: right;
+  }
+}
