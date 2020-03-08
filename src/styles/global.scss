@@ -59,7 +59,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Gilroy-Medium', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  font-family: 'Gilroy-Regular', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: #fff;
 }
@@ -77,10 +77,10 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
-h1 {
+/* h1 {
   font-size: 2em;
   margin: 0.67em 0;
-}
+} */
 
 /* Grouping content
    ========================================================================== */
@@ -449,3 +449,127 @@ a:hover {
 
 .breadcrumb__link__disabled {
 }
+
+/**
+ * Typography CSS Locks
+ */
+
+.display {
+  font-size: calc(1rem + 5vw);
+  margin: 0.67em 0;
+  font-weight: bold;
+  /* padding: 0.67em 0; */
+}
+.headingOne {
+  font-size: calc(1rem + 1.15vw);
+  margin: 0.67em 0;
+  color: rgb(109, 109, 109);
+  font-family: 'Gilroy-Regular';
+  font-weight: normal;
+  padding: 0 0 5rem 0;
+}
+
+.subSlogan {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .subSlogan {
+    display: block;
+    max-width: 60%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .display {
+    font-size: 4.8rem;
+    margin: 0.37em 0;
+    font-weight: bold;
+    /* padding: 0.67em 0; */
+  }
+  .headingOne {
+    font-size: 1.8rem;
+    margin: 0.67em 0;
+    color: rgb(109, 109, 109);
+    font-family: 'Gilroy-Regular';
+    font-weight: normal;
+  }
+}
+/* Typography fluid (SCSS Lock)
+   ========================================================================== */
+// @function strip-unit($value) {
+//   @return $value / ($value * 0 + 1);
+// }
+
+// @mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+//   $u1: unit($min-vw);
+//   $u2: unit($max-vw);
+//   $u3: unit($min-font-size);
+//   $u4: unit($max-font-size);
+
+//   @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+//     & {
+//       font-size: $min-font-size;
+//       @media screen and (min-width: $min-vw) {
+//         font-size: calc(
+//           #{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} *
+//             ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
+//         );
+//       }
+//       @media screen and (min-width: $max-vw) {
+//         font-size: $max-font-size;
+//       }
+//     }
+//   }
+// }
+
+// $min_width: 320px;
+// $max_width: 1200px;
+// $min_font: 1rem;
+// $max_font: 1rem;
+
+// html {
+//   @include fluid-type($min_width, $max_width, $min_font, $max_font);
+// }
+
+// $mod_1: 1.2; // mobile
+// $mod_2: 1.5; // desktop
+
+// h1 {
+//   font-size: $mod_1 * $mod_1 * $mod_1 * $mod_1 * 1rem;
+//   @include fluid-type(
+//     $min_width,
+//     $max_width,
+//     $mod_1 * $mod_1 * $mod_1 * $min_font,
+//     $mod_2 * $mod_2 * $mod_2 * $min_font
+//   );
+// }
+// h2 {
+//   font-size: $mod_1 * $mod_1 * $mod_1 * 1rem;
+//   @include fluid-type(
+//     $min_width,
+//     $max_width,
+//     $mod_1 * $mod_1 * $min_font,
+//     $mod_2 * $mod_2 * $min_font
+//   );
+// }
+// h3 {
+//   font-size: $mod_1 * $mod_1 * 1rem;
+//   @include fluid-type(
+//     $min_width,
+//     $max_width,
+//     $mod_1 * $min_font,
+//     $mod_2 * $min_font
+//   );
+// }

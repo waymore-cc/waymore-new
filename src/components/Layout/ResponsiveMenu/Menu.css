@@ -20,13 +20,18 @@
 #flyoutMenu ul {
   list-style: none;
   padding: 0;
+  margin-left: 0;
 }
-#flyoutMenu h2 {
+#flyoutMenu span {
   max-width: 1280px;
   margin: 15px auto;
-  padding: 0 1.2rem 0 0;
+  padding: 0;
+  display: block;
+  font-size: 1.2rem;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
 }
-#flyoutMenu h2 a {
+#flyoutMenu span a {
   color: #000;
   text-decoration: none;
   margin-left: -8px;
@@ -36,13 +41,13 @@
   background: transparent;
   transition: all 0.3s ease-in-out;
 }
-#flyoutMenu h2 a:hover {
+#flyoutMenu span a:hover {
   background: #282828;
   color: #fff;
 }
 
 #flyoutMenu.hide {
-  transform: translate3d(0, -100vh, 0);
+  transform: translate3d(0, -100%, 0);
   transition: all 1s cubic-bezier(0.7, 0, 0.3, 0.5);
 }
 

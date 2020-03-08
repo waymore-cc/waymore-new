@@ -1,4 +1,4 @@
-import './src/styles/global.css';
+import './src/styles/global.scss';
 
 export const onClientEntry = () => {
   // IntersectionObserver polyfill for gatsby-background-image (Safari, IE)

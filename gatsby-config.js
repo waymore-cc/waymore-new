@@ -26,7 +26,6 @@ module.exports = {
   // pathPrefix: "/gatsby-contentful-starter",
   plugins: [
     'gatsby-plugin-react-helmet',
-    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -45,12 +44,19 @@ module.exports = {
         crossOrigin: `use-credentials`
       }
     },
+    // {
+    //   resolve: `gatsby-plugin-typography`,
+    //   options: {
+    //     pathToConfigModule: `src/utils/typography`
+    //   }
+    // },
     {
       resolve: `gatsby-source-contentful`,
       options: contentfulConfig
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    'gatsby-plugin-sass',
     {
       resolve: `gatsby-source-filesystem`,
       options: {

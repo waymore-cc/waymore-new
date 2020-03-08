@@ -1,8 +1,9 @@
 import React from 'react';
 import Seo from '../components/Seo';
 // import Image from '../components/UI/Image/image';
-import classes from './index.module.css';
+// import classes from './index.module.css';
 import ContentBox from '../components/UI/ContentBox/ContentBox';
+import LogoStack from '../components/HomePage/LogoStack/LogoStack';
 
 export default ({ pageContext, location }) => {
   return (
@@ -10,15 +11,15 @@ export default ({ pageContext, location }) => {
       <Seo title='Home' />
 
       <ContentBox centered>
-        <p
-          className={classes.display}
+        <h1
+          className='display'
           // style={{ fontSize: '4.8rem', fontWeight: 'Bold', margin: '0.67em 0' }}
         >
-          Anything creative.
-        </p>
+          Everything creative.
+        </h1>
 
         <div
-          className={classes.subSlogan}
+          className='subSlogan'
           // style={{
           //   display: 'grid',
           //   marginTop: '-1rem',
@@ -27,16 +28,18 @@ export default ({ pageContext, location }) => {
           // }}
         >
           <div>
-            <p className={classes.headingOne}>
+            <h2 className='headingOne'>
               Jesteśmy kolektywem kreatywnym – zajmujemy się komunikacją,
               designem i budową nowej kultury pracy.
-            </p>
+            </h2>
           </div>
 
           {/* <div style={{ marginTop: "-70px" }}>
             <Image alt="Observer drawing" filename="observer2.png" />
           </div> */}
         </div>
+
+        <LogoStack />
       </ContentBox>
       <div
         style={{
@@ -49,7 +52,7 @@ export default ({ pageContext, location }) => {
         <ContentBox centered>
           <h1>Co możemy dla Ciebie zrobić?</h1>
           <h2>Branding</h2>
-          <h2>Social Media</h2>
+          <h3>Social Media</h3>
           <h2>eCommerce & Web Development</h2>
           <h2>SEO/SEM</h2>
           <h2>UX/UI</h2>

@@ -23,6 +23,13 @@
 .nav ul {
   list-style: none;
   padding-inline-start: 0;
+  margin-left: 0;
+}
+.nav span {
+  display: block;
+  font-size: 1.2rem;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
 }
 
 .menuLink a {
