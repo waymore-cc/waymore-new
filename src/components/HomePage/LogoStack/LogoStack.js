@@ -11,6 +11,7 @@ const LogoStack = props => {
           node {
             logos {
               contentful_id
+              title
               fluid(maxHeight: 160) {
                 ...GatsbyContentfulFluid
               }
@@ -40,18 +41,21 @@ const LogoStack = props => {
           justifyContent: 'space-between'
         }}
       >
-        {logosArray.map(({ contentful_id, fluid }) => {
+        {logosArray.map(({ contentful_id, fluid, title }) => {
+          console.log(title);
           return (
             <div
               style={{
-                display: 'inline-flex',
+                display: 'block',
                 justifyContent: 'center',
                 alignItems: 'center',
-                flex: '188px 0 0'
+                flex: '169px 0 0'
               }}
             >
               <Img
                 fluid={fluid}
+                alt={title}
+                key={contentful_id}
                 objectFit='contain'
                 style={{
                   height: 'auto',
@@ -64,6 +68,7 @@ const LogoStack = props => {
                   filter: 'grayscale(100%)'
                 }}
               />
+              <p style={{ textAlign: 'center' }}>{title}</p>
             </div>
           );
         })}

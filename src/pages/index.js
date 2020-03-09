@@ -29,8 +29,10 @@ export default ({ pageContext, location }) => {
         >
           <div>
             <h2 className='headingOne'>
-              Jesteśmy kolektywem kreatywnym – zajmujemy się komunikacją,
-              designem i budową nowej kultury pracy.
+              Tworzymy kreatywne rozwiązania w obszarze komunikacji i
+              technologii.
+              {/* Jesteśmy kolektywem kreatywnym – zajmujemy się komunikacją,
+              designem i budową nowej kultury pracy. */}
             </h2>
           </div>
 
@@ -38,8 +40,6 @@ export default ({ pageContext, location }) => {
             <Image alt="Observer drawing" filename="observer2.png" />
           </div> */}
         </div>
-
-        <LogoStack />
       </ContentBox>
       <div
         style={{
@@ -58,6 +58,12 @@ export default ({ pageContext, location }) => {
           <h2>UX/UI</h2>
         </ContentBox>
       </div>
+      <ContentBox centered>
+        <div style={{ margin: '4rem 0' }}>
+          {/* <h1>Korzystamy z najnowszych technologii</h1> */}
+          <LogoStack />
+        </div>
+      </ContentBox>
     </>
   );
 };

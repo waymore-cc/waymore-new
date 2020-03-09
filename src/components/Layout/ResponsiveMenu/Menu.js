@@ -33,11 +33,11 @@ class Menu extends Component {
             >
               <Navigation />
               <div>
-                <p>CONTACT</p>
+                <p>KONTAKT</p>
                 <h3 style={{ fontWeight: '400' }}>office@waymore.cc</h3>
               </div>
               <div>
-                <p>KNOWLEDGE BASE</p>
+                <p>SOCIAL MEDIA</p>
               </div>
             </div>
           </ContentBox>
